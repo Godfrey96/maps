@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>autocomplete</ion-title>
+  </ion-toolbar>
+  <!-- <form [formGroup]="addressForm" (ngSubmit)="submit()"> -->
+
+  <!-- <input id="autocomplete" type="text" [(ngModel)]="address" placeholder="Enter your address">
+
+    <label id="lblResult"></label>
+    <ion-button (click)="submit()">Submit</ion-button> -->
+
+  <!-- </form> -->
+
+  <form [formGroup]="addressForm" (ngSubmit)="submit()">
+
+    <input formControlName="firstName" type="text" placeholder="Enter your first name">
+    <input formControlName="lastName" type="text" placeholder="Enter your last name">
+    <input formControlName="completeAddress" #search type="text" placeholder="Enter your address">
+
+    <ion-button (click)="submit()">Submit</ion-button>
+
+  </form>
+
+  <!-- <ion-list *ngFor="let p of places">
+    <p>{{ p?.firstName }}</p>
+    <p>{{ p?.lastName }}</p>
+    <p>{{ p?.completeAddress.lat }}</p>
+  </ion-list> -->
+
+</ion-header>
+
+<ion-content>
+
+
+  <div id="map"></div>
+
+</ion-content>

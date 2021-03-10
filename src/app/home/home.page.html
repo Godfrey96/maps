@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <input id="autocomplete" [(ngModel)]="address" type="text" placeholder="Enter your address">
+
+      <ion-button (click)="initMap()">Location</ion-button>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- <div style="position: relative; z-index: 1;">  -->
+
+  <!-- <input id="autocomplete" type="text" placeholder="Enter your address">
+
+  <ion-button (click)="initMap()">Location</ion-button> 
+
+   <ion-item>
+   <p>{{ error }}</p>
+ </ion-item>
+
+ <ion-item>
+  <p>{{ address }}</p>
+</ion-item>-->
+
+  <div id="map"></div>
+
+  <!--<input id="autocomplete" type="text" placeholder="Enter your address">
+
+  <ion-button (click)="initMap()">Location</ion-button> -->
+
+  <!-- </div> -->
+
+</ion-content>

@@ -1,28 +1,18 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>closeby</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content>
 
-  <div class="grid">
-    <!-- <ion-row>
-      <ion-col size="5" style="background: red;">
+  <div class="form">
+    <ion-row>
+      <ion-col size="12">
         <input id="autocomplete" [(ngModel)]="address" type="text" placeholder="Enter your address">
       </ion-col>
-      
-      <ion-col size="7" style="background: blue;">
-        <div id="map"></div>
-      </ion-col>
-    </ion-row> -->
+    </ion-row>
   </div>
-
-  <ion-row>
-    <ion-col size="12" style="background: red;">
-      <input id="autocomplete" [(ngModel)]="address" type="text" placeholder="Enter your address">
-    </ion-col>
-  </ion-row>
 
   <ion-row>
     <ion-col>
@@ -45,7 +35,9 @@
     </ion-col>
   </ion-row>
 
-  <ion-button (click)="findCloseByPlace()" class="button" color="primary">Find CloseBy Place</ion-button>
+  <ion-button size="small" (click)="findCloseByPlace()" class="button" color="primary" style="text-transform: capitalize;">
+    Find CloseBy Place
+  </ion-button>
 
   <ion-row>
     <ion-col>
@@ -53,7 +45,7 @@
     </ion-col>
   </ion-row>
 
-  <ion-row>
+  <!-- <ion-row>
     <ion-col style="margin-top: 120%;">
       <ion-grid>
         <ion-list *ngFor="let place of places" :key="place.id">
@@ -64,38 +56,6 @@
         </ion-list>
       </ion-grid>
     </ion-col>
-  </ion-row>
-
-  <!-- <div class="field">
-    <div class="two fields">
-      <div class="field">
-        <select [(ngModel)]="type">
-          <option value="restaurant">Restaurant</option>
-        </select>
-      </div>
-      
-      <div class="field">
-        <select [(ngModel)]="radius">
-          <option value="5">5KM</option>
-          <option value="10">10KM</option>
-          <option value="15">15KM</option>
-          <option value="20">20KM</option>
-        </select>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- <div class="ui segment">
-    <div class="ui divided items">
-      <div class="item" *ngFor="let place of places" :key="place.id">
-        <div class="content">
-          <div class="header">{{ place.name }}</div>
-          <div class="meta">{{ place.vicinity }}</div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- <ion-button (click)="findCloseByPlace()" class="button" color="primary">Find CloseBy Place</ion-button> -->
+  </ion-row> -->
 
 </ion-content>

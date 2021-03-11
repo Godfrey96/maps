@@ -160,7 +160,7 @@ export class ClosebyPage implements OnInit {
       });
 
       google.maps.event.addListener(marker, "click", () => {
-        const URL = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?key=${this.apiKey}&place_id=${placeID}`;
+        const URL = `https://corsanywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?key=${this.apiKey}&place_id=${placeID}`;
 
         axios.get(URL).then(response => {
           if (response.data.error_message) {

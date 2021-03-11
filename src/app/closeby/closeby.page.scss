@@ -9,3 +9,21 @@
     left: 0;
     // background: red;
   }
+
+  // .form{
+  //   border-radius: 50px solid black;
+  //   height: 50px;
+  //   width: 100%;
+  // }
+
+  input {
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    left: 0;
+    border-radius: 20px solid black;
+  }
+  input[type="text"]:focus {
+    border-radius: 50px black;
+  }
